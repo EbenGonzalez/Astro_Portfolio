@@ -1,22 +1,34 @@
+---
+import Header from "../components/Header.astro";
+import "@fontsource/poppins";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Eben Portfolio</title>
 	</head>
 	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
+		<Header />
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
+	:root {
+		color-scheme: light dark;
+	}
 	html,
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		/*background: #050505;*/
+		display: flex;
+		flex-direction: column;
+		font-family: "Poppins", sans-serif;
+		color: white;
 	}
 </style>
