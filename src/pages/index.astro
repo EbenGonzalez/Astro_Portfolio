@@ -4,6 +4,7 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import ProfilePic from '../components/ProfilePic.astro'
 import Card from '../components/Card.astro'
+import Slide from '../components/Slide.astro'
 
 ---
 
@@ -18,7 +19,10 @@ import Card from '../components/Card.astro'
 			<h2 class="text-xl opacity-80 ">
 				Sin experiencia y Jodido.Blablablablablablalbalbalba
 			</h2>
-			<ul> <Card></Card> </ul>
+			<ul> 
+				<li><Card></Card></li> 
+				<li> <Slide></Slide> </li>
+			</ul>
 	</section>
 	</main>
 	<Welcome />
