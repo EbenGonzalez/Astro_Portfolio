@@ -5,28 +5,31 @@ import Layout from '../layouts/Layout.astro';
 import ProfilePic from '../components/ProfilePic.astro'
 import Card from '../components/Card.astro'
 
-
 const cards = [
   {
     id: 'card-1',
-    images: ['1.png', '2.png', '3.png'],
+    images: ['/images/1.png', '/images/2.png', '/images/3.png'],
     title: 'Proyecto 1',
     description: 'Descripción del Proyecto 1 con detalles interesantes.',
     link: '#',
+		icons:['/icons/html5.svg','/icons/css_old.svg','/icons/javascript.svg','/icons/vscode.svg']
   },
   {
     id: 'card-2',
-    images: ['4.png', '5.png', '6.png'],
+    images: ['/images/4.png', '/images/5.png', '/images/6.png'],
     title: 'Proyecto 2',
     description: 'Descripción del Proyecto 2, un enfoque diferente.',
     link: '#',
+		icons:['/icons/html5.svg','/icons/css_old.svg','/icons/javascript.svg','/icons/vscode.svg','/icons/Express.js_light.svg','/icons/mysql.svg',
+		'/icons/postman.svg','/icons/nodejs.svg','/icons/git.svg','/icons/sequelize.svg']
   },
   {
     id: 'card-3',
-    images: ['7.png', '8.png'],
+    images: ['/images/7.png', '/images/8.png'],
     title: 'Proyecto 3',
     description: 'Descripción del Proyecto 3 con un resumen atractivo.',
     link: '#',
+		icons:['/icons/html5.svg','/icons/css_old.svg','/icons/javascript.svg','/icons/html5.svg','/icons/css_old.svg','/icons/javascript.svg']
   },
 ];
 ---
@@ -48,6 +51,7 @@ const cards = [
 						<Card {...card} />
 					</li>
 				))}
+			</ul>
 	</section>
 	</main>
 	<Welcome />
