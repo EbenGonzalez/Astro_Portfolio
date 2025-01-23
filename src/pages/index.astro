@@ -4,12 +4,31 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import ProfilePic from '../components/ProfilePic.astro'
 import Card from '../components/Card.astro'
-import Carousel from '../components/Carousel.astro'
 
-const images1 = ['1.png', '2.png', '3.png'];
-const images2 = ['4.png', '5.png', '6.png'];
-const images3 = ['7.png', '8.png'];
 
+const cards = [
+  {
+    id: 'card-1',
+    images: ['1.png', '2.png', '3.png'],
+    title: 'Proyecto 1',
+    description: 'Descripción del Proyecto 1 con detalles interesantes.',
+    link: '#',
+  },
+  {
+    id: 'card-2',
+    images: ['4.png', '5.png', '6.png'],
+    title: 'Proyecto 2',
+    description: 'Descripción del Proyecto 2, un enfoque diferente.',
+    link: '#',
+  },
+  {
+    id: 'card-3',
+    images: ['7.png', '8.png'],
+    title: 'Proyecto 3',
+    description: 'Descripción del Proyecto 3 con un resumen atractivo.',
+    link: '#',
+  },
+];
 ---
 
 <Layout >
@@ -23,12 +42,12 @@ const images3 = ['7.png', '8.png'];
 			<h2 class="text-xl opacity-80 ">
 				Sin experiencia y Jodido.Blablablablablablalbalbalba
 			</h2>
-			<ul> 
-				<li><Card></Card></li> 
-				<li> <Carousel id="carousel-1" images={images1} /> </li>
-				<li> <Carousel id="carousel-2" images={images2} /> </li>
-				<li> <Carousel id="carousel-3" images={images3} /> </li>
-			</ul>
+			<ul class="space-y-10">
+				{cards.map((card) => (
+					<li>
+						<Card {...card} />
+					</li>
+				))}
 	</section>
 	</main>
 	<Welcome />
