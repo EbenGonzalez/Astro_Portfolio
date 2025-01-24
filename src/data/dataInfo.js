@@ -6,8 +6,8 @@ const buttons1 = [
   },
   {
     text: 'Comprar Ahora',
-    iconButton: '/icons/css_old.svg',
-    link: 'https://example.com/comprar-ahora',
+    iconButton: 'images/mando.png',
+    link: 'https://ebengonzalez.github.io/Super_Memory_Bros/',
   },
 ];
 

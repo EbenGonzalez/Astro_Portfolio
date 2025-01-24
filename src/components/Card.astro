@@ -15,7 +15,7 @@ export interface Props {
 const { id, images, title, description, icons, buttons } = Astro.props;
 ---
 
-<div class="max-w bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="max-w bg-gray-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
   <!-- Carrusel en lugar de la imagen estática -->
   <Carousel id={id} images={images} />
 
@@ -33,7 +33,7 @@ const { id, images, title, description, icons, buttons } = Astro.props;
           <TecnoBadge src={src} />
         ))}
       </div>
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-3">
         {buttons.map((button) => (
           <LinkButton 
             text={button.text} 
