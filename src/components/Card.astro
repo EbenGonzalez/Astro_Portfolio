@@ -1,17 +1,18 @@
 ---
 import Carousel from './Carousel.astro';
 import TecnoBadge from './TecnoBadge.astro';
+import LinkButton from './LinkButton.astro';
 
 export interface Props {
   id: string; // ID único de la tarjeta
   images: string[]; // URLs de las imágenes para el carrusel
   title: string; // Título de la tarjeta
   description: string; // Descripción de la tarjeta
-  link: string; // Enlace del botón
   icons: string[];
+  buttons: { text: string; iconButton: string; link: string }[];
 }
 
-const { id, images, title, description, link, icons } = Astro.props;
+const { id, images, title, description, icons, buttons } = Astro.props;
 ---
 
 <div class="max-w bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -32,27 +33,15 @@ const { id, images, title, description, link, icons } = Astro.props;
           <TecnoBadge src={src} />
         ))}
       </div>
-    <a
-      href={link}
-      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-    >
-      Read more
-      <svg
-        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 14 10"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M1 5h12m0 0L9 1m4 4L9 9"
-        />
-      </svg>
-    </a>
+      <div class="flex flex-wrap gap-2">
+        {buttons.map((button) => (
+          <LinkButton 
+            text={button.text} 
+            iconButton={button.iconButton} 
+            link={button.link} 
+          />
+        ))}
+      </div>
   </div>
 </div>
 
