@@ -6,7 +6,7 @@ const buttons1 = [
   },
   {
     text: 'Comprar Ahora',
-    iconButton: 'images/mando.png',
+    iconButton: '/icons/device-gamepad.svg',
     link: 'https://ebengonzalez.github.io/Super_Memory_Bros/',
   },
 ];
@@ -39,4 +39,28 @@ const cards = [
   },
 ];
 
-export { cards }
+const intro1= "Hola soy ebencito";
+const intro2="Sin experiencia asi que mal vamos xD blablablablablablablablabla"
+
+const experience=[
+  {
+    date: "Enero",
+    title: "Ciclo",
+    description: "blabla",
+    link: ""
+  },
+  {
+    date: "Febrero",
+    title: "bootcamp",
+    description: "bleble",
+    link: ""
+  },
+  {
+    date: "Marzo",
+    title: "idiomas",
+    description: "blibli",
+    link: ""
+  }
+]
+
+export { cards, intro1, intro2, experience }

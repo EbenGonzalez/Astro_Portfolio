@@ -1,6 +1,12 @@
 ---
 import Header from "../components/Header.astro";
 import "@fontsource/poppins";
+
+interface Props {
+	title: string;
+	description: string;
+}
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,8 +15,8 @@ import "@fontsource/poppins";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Eben Portfolio</title>
+		<meta name="generator" content={description} />
+		<title>{title}</title>
 		<script
 			type="module"
 			src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"

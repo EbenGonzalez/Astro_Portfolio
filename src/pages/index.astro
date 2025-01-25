@@ -4,19 +4,23 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import ProfilePic from '../components/ProfilePic.astro';
 import Card from '../components/Card.astro';
-import { cards } from '../data/dataInfo';
+import Timeline from '../components/Timeline.astro'
+import { cards,intro1,intro2 } from '../data/dataInfo';
 ---
 
-<Layout >
+<Layout title="Eben Portfolio - Desarrollador y Programador web"
+	description="Contratane polfavol"
+>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<ProfilePic></ProfilePic>
 			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
-				Hola, soy Eben <div class="flex justify-center items-center"> <Badge>Disponible</Badge>
+				{intro1} 
+				<div class="flex justify-center items-center"> <Badge>Disponible</Badge>
 				</div>
 			</h1>
 			<h2 class="text-xl opacity-80 ">
-				Sin experiencia y Jodido.Blablablablablablalbalbalba
+				{intro2}
 			</h2>
 			<ul class="space-y-10">
 				{cards.map((card) => (
@@ -25,6 +29,7 @@ import { cards } from '../data/dataInfo';
 					</li>
 				))}
 			</ul>
+			<Timeline/>
 	</section>
 	</main>
 	<Welcome />
