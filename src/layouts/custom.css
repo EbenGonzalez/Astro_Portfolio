@@ -1,0 +1,60 @@
+
+
+:root {
+	--size: 120px;
+	--font-size: 6rem;
+}
+
+.name-container {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--background);
+}
+.name {
+	position: relative;
+	display: flex;
+}
+.name .cosmic {
+	position: relative;
+	cursor: pointer;
+	height: var(--size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		font-size: var(--font-size);
+		font-weight: 700;
+		-webkit-text-stroke: 0.5px var(--color);
+		color: transparent;
+		transition: 0.5s;
+	}
+
+	&:hover span {
+		opacity: 0;
+	}
+}
+
+.name .cosmic {
+	&::before {
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		font-size: var(--font-size);
+		height: 0;
+		font-weight: 700;
+		overflow: hidden;
+		transition: 0.6s ease-in-out;
+		text-align: center;
+		line-height: var(--size);
+		color: var(--color);
+	}
+	&:hover::before {
+		height: 100%;
+		filter: drop-shadow(0 0 2rem var(--color));
+	}
+}
