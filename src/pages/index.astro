@@ -1,36 +1,49 @@
 ---
-import Badge from '../components/Badge.astro';
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import ProfilePic from '../components/ProfilePic.astro';
-import Card from '../components/Card.astro';
-import Timeline from '../components/Timeline.astro'
-import { cards,intro1,intro2 } from '../data/dataInfo';
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import ProfilePic from "../components/ProfilePic.astro";
+import Card from "../components/Card.astro";
+import Timeline from "../components/Timeline.astro";
+import { cards, intro1, intro2 } from "../data/dataInfo";
+import Footer from "../components/Footer.astro";
+import NiceLetters from "../components/NiceLetters.astro";
 ---
 
-<Layout title="Eben Portfolio - Desarrollador y Programador web"
+<Layout
+	title="Eben Portfolio - Desarrollador y Programador web"
 	description="Contratane polfavol"
 >
-	<main>
+	
+	<main class="px-4">
+		
 		<section class="w-full mx-auto lg:w-[740px] py-44">
-			<ProfilePic></ProfilePic>
+			<ProfilePic />
 			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
-				{intro1} 
-				<div class="flex justify-center items-center"> <Badge>Disponible</Badge>
+				{intro1}
+				<div class="flex justify-center items-center">
+					<Badge>Disponible</Badge>
 				</div>
 			</h1>
-			<h2 class="text-xl opacity-80 ">
+			<h2 class="text-xl opacity-80">
 				{intro2}
 			</h2>
 			<ul class="space-y-10">
-				{cards.map((card) => (
-					<li>
-						<Card {...card} />
-					</li>
-				))}
+				{
+					cards.map((card) => (
+						<li>
+							<Card {...card} />
+						</li>
+					))
+				}
 			</ul>
-			<Timeline/>
-	</section>
+		</section>
+		<section class="flex flex-col pt-10 gap-x-6 w-full mx-auto lg:w-[740px] py-44">
+			<span class="flex pt-10 gap-x-6">
+			<img class="w-12 h-12 p-1" src="/icons/vocabulary.svg" alt="" />
+			<h2 class="text-4xl font-semibold mb-4">Estudios</h2>
+		</span>
+			<Timeline />
+		</section>
 	</main>
-	<Welcome />
+	<Footer/>
 </Layout>

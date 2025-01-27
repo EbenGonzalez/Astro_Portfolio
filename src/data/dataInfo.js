@@ -47,19 +47,22 @@ const experience=[
     date: "Enero",
     title: "Ciclo",
     description: "blabla",
-    link: ""
+    link: "https://tabler.io/icons/icon/vocabulary",
+    textButton: "Ver más"
   },
   {
     date: "Febrero",
     title: "bootcamp",
     description: "bleble",
-    link: ""
+    link: "",
+    textButton: "Ver más"
   },
   {
     date: "Marzo",
     title: "idiomas",
     description: "blibli",
-    link: ""
+    link: "",
+    textButton: "ojito"
   }
 ]
 
