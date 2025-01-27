@@ -16,14 +16,26 @@ const altText = 'Texto descriptivo para la imagen'; // Cambia esto al texto alte
       class="w-full h-full object-cover rounded-full transform transition duration-700 ease-in-out group-hover:scale-110"
     />
 
-    <!-- Efecto de borde interactivo -->
     <div
-      class="absolute inset-0 rounded-full border-[6px] border-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-50 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:blur-sm"
+      class="absolute inset-0 rounded-full border-4 border-transparent border-t-blue-400 border-l-purple-500 border-b-pink-500 border-r-yellow-400 animate-spin-slow"
     ></div>
-
-    <!-- Sombra decorativa -->
-    <div class="absolute inset-0 rounded-full shadow-md transition-shadow duration-700 ease-in-out group-hover:shadow-xl"></div>
   </div>
 </div>
+
+<style>
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+    .animate-spin-slow {
+      animation: spin-slow 8s linear infinite;
+    }
+  
+</style>
 
 
