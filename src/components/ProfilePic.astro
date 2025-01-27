@@ -1,5 +1,29 @@
-<img
-  src="/images/eben.jpg"
-  alt="Imagen principal del portafolio"
-  class="relative rounded-2xl shadow-lg border-4 border-white w-100 h-100 mb-4"
-/>
+---
+const imageSrc = '/images/eben.jpg'; // Cambia esto al enlace de tu imagen
+const altText = 'Texto descriptivo para la imagen'; // Cambia esto al texto alternativo de la imagen
+---
+
+<div class="circular-container flex justify-center items-center">
+
+  <!-- Contenedor del círculo -->
+  <div
+    class="circular-image-wrapper relative group w-[150px] h-[150px] rounded-full flex justify-center items-center overflow-hidden bg-gradient-to-r from-gray-700 to-gray-800"
+  >
+    <!-- Imagen principal -->
+    <img
+      src={imageSrc}
+      alt={altText}
+      class="w-full h-full object-cover rounded-full transform transition duration-700 ease-in-out group-hover:scale-110"
+    />
+
+    <!-- Efecto de borde interactivo -->
+    <div
+      class="absolute inset-0 rounded-full border-[6px] border-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-50 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:blur-sm"
+    ></div>
+
+    <!-- Sombra decorativa -->
+    <div class="absolute inset-0 rounded-full shadow-md transition-shadow duration-700 ease-in-out group-hover:shadow-xl"></div>
+  </div>
+</div>
+
+
