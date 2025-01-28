@@ -1,5 +1,4 @@
 
-
 :root {
 	--size: 120px;
 	--font-size: 8rem;
@@ -12,10 +11,12 @@
 	align-items: center;
 	background: var(--background);
 }
+
 .name {
 	position: relative;
 	display: flex;
 }
+
 .name .cosmic {
 	position: relative;
 	cursor: pointer;

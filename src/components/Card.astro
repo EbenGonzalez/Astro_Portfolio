@@ -4,10 +4,10 @@ import TecnoBadge from './TecnoBadge.astro';
 import LinkButton from './LinkButton.astro';
 
 export interface Props {
-  id: string; // ID único de la tarjeta
-  images: string[]; // URLs de las imágenes para el carrusel
-  title: string; // Título de la tarjeta
-  description: string; // Descripción de la tarjeta
+  id: string;
+  images: string[];
+  title: string;
+  description: string;
   icons: string[];
   buttons: { text: string; iconButton: string; link: string }[];
 }
@@ -16,7 +16,7 @@ const { id, images, title, description, icons, buttons } = Astro.props;
 ---
 
 <div class="max-w bg-gray-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <!-- Carrusel en lugar de la imagen estática -->
+  <!-- Carrusel imagenes -->
   <Carousel id={id} images={images} />
 
   <div class="p-5">
@@ -27,7 +27,7 @@ const { id, images, title, description, icons, buttons } = Astro.props;
     </a>
     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
 
-    <!-- Avatares antes del botón -->
+    <!-- Badges de las tecnologias usadas -->
     <div class="flex justify-center items-center space-x-2 mb-3">
         {icons.map((src) => (
           <TecnoBadge src={src} />

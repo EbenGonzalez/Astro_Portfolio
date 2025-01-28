@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "@fontsource/poppins";
-import '../layouts/custom.css'; // Ruta a tu archivo CSS externo
+import "../layouts/custom.css";
 
 interface Props {
 	title: string;
@@ -26,8 +26,7 @@ const { description, title } = Astro.props;
 	</head>
 
 	<body
-		class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"
-	></body><Header />
+	 class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div></body><Header />
 	<slot />
 </html>
 
@@ -35,6 +34,7 @@ const { description, title } = Astro.props;
 	:root {
 		color-scheme: light dark;
 	}
+
 	html,
 	body {
 		height: max-content;
@@ -44,5 +44,5 @@ const { description, title } = Astro.props;
 		color: white;
 		scroll-behavior: smooth;
 	}
-
 </style>
+
