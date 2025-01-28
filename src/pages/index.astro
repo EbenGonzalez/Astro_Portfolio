@@ -7,6 +7,7 @@ import Timeline from "../components/Timeline.astro";
 import { cards, intro1, intro2 } from "../data/dataInfo";
 
 import NiceLetters from "../components/NiceLetters.astro";
+import Contact from "../components/Contact.astro";
 
 ---
 
@@ -29,6 +30,7 @@ import NiceLetters from "../components/NiceLetters.astro";
 			<h2 class="text-xl opacity-80">
 				{intro2}
 			</h2>
+			<Contact />
 			<ul id="proyectos" class="space-y-10">
 				{
 					cards.map((card) => (

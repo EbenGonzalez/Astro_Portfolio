@@ -1,3 +1,10 @@
+const contactInfo = [
+  { text: "Github", icon: "/icons/Github_light.svg", href: "https://github.com", download: false },
+  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
+  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
+  { text: "Descargar", icon: "/icons/file-download.svg", href: "/eben_gonzalez.pdf", download: true },
+];
+
 const navItems = [
   { text: "Inicio", icon: "/icons/home.svg", href: "#inicio" },
   { text: "Proyectos", icon: "/icons/code.svg", href: "#proyectos" },
@@ -111,4 +118,4 @@ const experience=[
   }
 ]
 
-export { cards, intro1, intro2, experience, navItems }
+export { cards, intro1, intro2, experience, navItems, contactInfo }
