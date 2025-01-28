@@ -5,11 +5,13 @@ import ProfilePic from "../components/ProfilePic.astro";
 import Card from "../components/Card.astro";
 import Timeline from "../components/Timeline.astro";
 import { cards, intro1, intro2 } from "../data/dataInfo";
-import Footer from "../components/Footer.astro";
+
 import NiceLetters from "../components/NiceLetters.astro";
+
 ---
 
 <Layout
+
 	title="Eben Portfolio - Desarrollador y Programador web"
 	description="Contratane polfavol"
 >
@@ -21,7 +23,7 @@ import NiceLetters from "../components/NiceLetters.astro";
 			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
 				{intro1}
 				<div class="flex justify-center items-center">
-					<Badge>Disponible</Badge>
+					<Badge>En Busca De Practicas</Badge>
 				</div>
 			</h1>
 			<h2 class="text-xl opacity-80">
@@ -47,5 +49,4 @@ import NiceLetters from "../components/NiceLetters.astro";
 			<Timeline />
 		</section>
 	</main>
-	<Footer />
 </Layout>

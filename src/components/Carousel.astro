@@ -7,8 +7,8 @@ export interface Props {
 const { id, images } = Astro.props;
 ---
 
-<div id={id} class="relative w-full group" data-carousel="slide" data-carousel-interval="5000">
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+<div id={id} class="relative w-full group z-0" data-carousel="slide" data-carousel-interval="5000">
+  <div class="relative h-56 overflow-hidden rounded-t-lg md:h-96">
     {
       images.map((src, index) => (
         <div
@@ -19,7 +19,7 @@ const { id, images } = Astro.props;
         >
           <img
             src={src}
-            class="absolute block w-full h-full object-cover"
+            class="absolute block w-full h-full object-cover "
             alt={`Slide ${index + 1}`}
           />
         </div>
