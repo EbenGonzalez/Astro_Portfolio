@@ -1,3 +1,10 @@
+const navItems = [
+  { text: "Inicio", icon: "/icons/home.svg", href: "#inicio" },
+  { text: "Proyectos", icon: "/icons/code.svg", href: "#proyectos" },
+  { text: "Estudios", icon: "/icons/notebook.svg", href: "#estudios" },
+  { text: "Contacto", icon: "/icons/address-book.svg", href: "#contacto" },
+];
+
 const buttons1 = [
   {
     text: 'Repositorio',
@@ -104,4 +111,4 @@ const experience=[
   }
 ]
 
-export { cards, intro1, intro2, experience }
+export { cards, intro1, intro2, experience, navItems }

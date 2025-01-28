@@ -1,8 +1,38 @@
-<header class=" fixed top-0 left-1/2 transform -translate-x-1/2 flex justify-center pt-10 h-20 bg-black w-full z-20 ">
-  <nav class=" flex flex-row gap-x-10 opacity-80">
-    <a href="#top">Inicio</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#estudios">Estudios</a> 
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+---
+export interface Props {
+
+  text: string; // El texto del botón
+  icon: string; // Ruta o URL del ícono
+  href: string; // Enlace o hashtag
+}
+
+// Props del componente
+const {navItems = [] }: { menuText: string; navItems: NavItem[] } = Astro.props;
+---
+
+<div class="fixed flex items-center z-20 gap-4 p-4  text-white rounded-md shadow-lg">
+  <!-- Botón para abrir/cerrar el menú -->
+  <button
+    class="p-2 bg-gray-700 rounded-md hover:bg-gray-600 transition-colors"
+    onclick="document.getElementById('dropdown-menu').classList.toggle('hidden')"
+  >
+    Menu
+  </button>
+
+  <!-- Menú desplegable -->
+  <div
+    id="dropdown-menu"
+    class="hidden flex items-center  text-white rounded-md shadow-xs "
+  >
+    <!-- Botones generados dinámicamente -->
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class="inline-flex border-white/10items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 "
+      >
+        <img src={item.icon} alt={`${item.text} icon`} class="w-4 h-4 mr-2" />
+        {item.text}
+      </a>
+    ))}
+  </div>
+</div>

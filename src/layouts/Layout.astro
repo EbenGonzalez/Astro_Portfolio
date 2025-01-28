@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource/poppins";
-import "../layouts/custom.css";
+import { navItems } from "../data/dataInfo";
 
 interface Props {
 	title: string;
@@ -27,12 +27,12 @@ const { description, title } = Astro.props;
 	</head>
 
 	<body class="relative h-full w-full bg-slate-950">
-		<div
+		<div id="inicio"
 			class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] z-0"
 		>
 		</div>
 		<div class="relative z-20">
-			<Header/>
+			<Header navItems={navItems}/>
 			<slot />
 			<Footer/>
 		</div>
