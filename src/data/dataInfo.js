@@ -2,7 +2,7 @@ const contactInfo = [
   { text: "Github", icon: "/icons/Github_light.svg", href: "https://github.com", download: false },
   { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
   { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
-  { text: "Descargar", icon: "/icons/file-download.svg", href: "/eben_gonzalez.pdf", download: true },
+  { text: "Curriculum", icon: "/icons/file-download.svg", href: "/docs/eben_gonzalez.pdf", download: true },
 ];
 
 const navItems = [
@@ -57,7 +57,7 @@ const buttons4 = [
 const cards = [
   {
     id: 'card-1',
-    images: ['/images/1.png', '/images/2.png', '/images/3.png'],
+    images: ['/images/mario1.jpeg', '/images/mario2.jpg', '/images/mario3.jpg'],
     title: 'Super Memory Bros',
     description: 'Este fue mi primer proyecto en programación: un juego de memoria sencillo hecho con HTML, CSS y JavaScript. Por mi poca experiencia y conociemiento esta diseñado  pensando unicamente en pantallas de PC, por lo que no es responsive. Fue una experiencia muy útil para empezar a entender cómo funcionan las tecnologías básicas del desarrollo web',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg'],
@@ -65,7 +65,7 @@ const cards = [
   },
   {
     id: 'card-2',
-    images: ['/images/4.png', '/images/5.png', '/images/6.png'],
+    images: ['/images/insulink1.jpg', '/images/insulink2.jpg', '/images/insulink3.jpg'],
     title: 'Insulink',
     description: 'Una pequeña API que, a partir de los informes generados por una bomba de insulina, proporciona información sobre las cantidades de hidratos de carbono e insulina consumidos, resistencia a la insulina y otras utilidades pensadas tanto para diabéticos como para sus cuidadores.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/Express.js_light.svg', '/icons/mysql.svg',
@@ -74,16 +74,16 @@ const cards = [
   },
   {
     id: 'card-3',
-    images: ['/images/7.png', '/images/8.png'],
+    images: ['/images/wayhome1.jpg', '/images/wayhome2.jpg', '/images/wayhome3.jpg'],
     title: 'Way Home',
     description: 'Proyecto final del bootcamp, donde aplicamos todo lo aprendido para crear una web interactiva destinada a amantes de los animales. La plataforma facilita la interacción entre usuarios que buscan dar en adopción o ofrecer acogida temporal a sus mascotas.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/Express.js_light.svg', '/icons/mysql.svg',
-      '/icons/postman.svg', '/icons/nodejs.svg', '/icons/git.svg', '/icons/sequelize.svg', '/icons/react.svg'],
+      '/icons/postman.svg', '/icons/nodejs.svg', '/icons/git.svg', '/icons/sequelize.svg', '/icons/react.svg', '/icons/materialui.svg'],
     buttons: buttons3
   },
   {
     id: 'card-4',
-    images: ['/images/7.png', '/images/8.png'],
+    images: ['/images/insulink1.jpg','/images/insulink1.jpg'],
     title: 'Portfolio Personal',
     description: 'Mis primeros pasos con Astro y Tailwind para crear este pequeño portfolio personal. Está organizado por componentes y es fácil de usar como plantilla para quien lo necesite.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg','/icons/flowbite.svg'],
@@ -96,25 +96,25 @@ const intro2="Sin experiencia asi que mal vamos xD blablablablablablablablabla"
 
 const experience=[
   {
-    date: "Enero",
-    title: "Ciclo",
+    date: "2024/2025",
+    title: "Ciclo Superior Desarrollo de Aplicaciones Web",
     description: "blabla",
-    link: "https://tabler.io/icons/icon/vocabulary",
-    textButton: "Ver más"
+    link: "/docs/eben_notas.pdf",
+    textButton: "Notas"
   },
   {
-    date: "Febrero",
-    title: "bootcamp",
+    date: "2024",
+    title: "Certificado Profesionalidad Nivel 3 Seguridad Informatica",
     description: "bleble",
-    link: "",
-    textButton: "Ver más"
+    link: "/docs/eben_seguridad.pdf",
+    textButton: "Certificado"
   },
   {
-    date: "Marzo",
-    title: "idiomas",
+    date: "2023",
+    title: "Bootcamp Desarrollo Web Full Stack",
     description: "blibli",
-    link: "",
-    textButton: "ojito"
+    link: "/docs/eben_bootcamp.pdf",
+    textButton: "Diploma"
   }
 ]
 

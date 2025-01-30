@@ -28,7 +28,7 @@ const {navItems = [] }: { menuText: string; navItems: NavItem[] } = Astro.props;
     {navItems.map((item) => (
       <a
         href={item.href}
-        class="inline-flex border-white/10 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 "
+        class="flex border-white/10 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 "
       >
         <img src={item.icon} alt={`${item.text} icon`} class="w-4 h-4 mr-2" />
         {item.text}
