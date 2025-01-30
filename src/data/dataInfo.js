@@ -1,5 +1,5 @@
 const contactInfo = [
-  { text: "Github", icon: "/icons/Github_light.svg", href: "https://github.com", download: false },
+  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com", download: false },
   { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
   { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
   { text: "Curriculum", icon: "/icons/file-download.svg", href: "/docs/eben_gonzalez.pdf", download: true },
@@ -91,28 +91,28 @@ const cards = [
   }
 ];
 
-const intro1= "Hola soy ebencito";
-const intro2="Sin experiencia asi que mal vamos xD blablablablablablablablabla"
+const intro1= "Hola!!!";
+const intro2="Soy Eben González de la Cruz, desarrollador web en formación. Vengo de otro sector, pero mi pasión por la tecnología me ha llevado a reinventarme en este campo. Busco una empresa donde realizar mis prácticas, aprender de profesionales y aportar con entusiasmo."
 
 const experience=[
   {
     date: "2024/2025",
     title: "Ciclo Superior Desarrollo de Aplicaciones Web",
-    description: "blabla",
+    description: "He completado la formación teórica del Ciclo Superior en Desarrollo de Aplicaciones Web, quedando pendiente únicamente la fase de prácticas. Durante el curso, he desarrollado habilidades en análisis, diseño y desarrollo de aplicaciones, abordando tanto la parte funcional como la experiencia del usuario. También he trabajado en la implementación de soluciones web optimizadas, seguras y adaptadas a distintos entornos profesionales.",
     link: "/docs/eben_notas.pdf",
     textButton: "Notas"
   },
   {
     date: "2024",
     title: "Certificado Profesionalidad Nivel 3 Seguridad Informatica",
-    description: "bleble",
+    description: "He completado el Certificado de Profesionalidad en Seguridad Informática (IFCT0109), con una duración de 500 horas. Durante la formación, he adquirido conocimientos en gestión de servicios informáticos, auditoría de seguridad, detección y respuesta ante incidentes, diseño de sistemas seguros y protección de equipos. Esta formación me ha preparado para identificar, mitigar y gestionar riesgos de seguridad en sistemas informáticos y redes, aplicando medidas preventivas y correctivas para garantizar la integridad y confidencialidad de la información.",
     link: "/docs/eben_seguridad.pdf",
     textButton: "Certificado"
   },
   {
     date: "2023",
     title: "Bootcamp Desarrollo Web Full Stack",
-    description: "blibli",
+    description: "Mi primera incursion en este vasto mundo, he completado el Bootcamp Full-Stack Web & Mobile Development de Reboot Academy, con una duración de 300 horas. Durante esta formación intensiva, he trabajado en el desarrollo de aplicaciones web y móviles, abarcando tanto el frontend como el backend, además del diseño de interfaces y experiencia de usuario. A lo largo del curso, he adquirido habilidades en desarrollo de interfaces web, creación de servidores, bases de datos, API REST y despliegue de aplicaciones, además de metodologías ágiles, control de versiones y fundamentos de UX/UI. Esta formación me ha permitido desarrollar soluciones digitales completas, combinando funcionalidad, rendimiento y una óptima experiencia de usuario.",
     link: "/docs/eben_bootcamp.pdf",
     textButton: "Diploma"
   }
