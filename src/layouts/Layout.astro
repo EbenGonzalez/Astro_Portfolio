@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource/poppins";
-import { navItems } from "../data/dataInfo";
+
 
 interface Props {
 	title: string;
@@ -32,7 +32,7 @@ const { description, title } = Astro.props;
 		>
 		</div>
 		<div class="relative z-20">
-			<Header navItems={navItems}/>
+			<Header />
 			<slot />
 			<Footer/>
 		</div>

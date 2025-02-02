@@ -1,13 +1,9 @@
 ---
-export interface Props {
 
-  text: string;
-  icon: string; 
-  href: string; 
-}
 
 // Props del componente
-const {navItems = [] }: { menuText: string; navItems: NavItem[] } = Astro.props;
+
+import { navItems } from "../data/dataInfo";
 ---
 
 <div class="fixed flex items-center z-20 gap-4 p-4  text-white rounded-md ">
@@ -22,7 +18,7 @@ const {navItems = [] }: { menuText: string; navItems: NavItem[] } = Astro.props;
   <!-- Menú desplegable -->
   <div
     id="dropdown-menu"
-    class="hidden flex items-center text-white rounded-md shadow-xs "
+    class="hidden flex flex-wrap items-center text-white rounded-md shadow-xs "
   >
     <!-- Botones generados dinámicamente -->
     {navItems.map((item) => (
