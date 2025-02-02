@@ -1,14 +1,14 @@
 const contactInfo = [
-  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com", download: false },
-  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
-  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
+  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com/EbenGonzalez", download: false },
+  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:ebencito88@gmail.com", download: false },
+  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com/in/ebendev/", download: false },
   { text: "Curriculum", icon: "/icons/file-download.svg", href: "/docs/eben_gonzalez.pdf", download: true },
 ];
 
 const footerInfo = [
-  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com", download: false },
-  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
-  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
+  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com/EbenGonzalez", download: false },
+  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:ebencito88@gmail.com", download: false },
+  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com/in/ebendev/", download: false },
   { text: "Whatsapp", icon: "/icons/whatsapp.svg", href: "https://wa.me/662308309", download: false },
   { text: "Telegram", icon: "/icons/telegram.svg", href: "https://t.me/Ebencitoo", download: false },
 ];
@@ -18,6 +18,13 @@ const navItems = [
   { text: "Proyectos", icon: "/icons/code.svg", href: "#proyectos" },
   { text: "Estudios", icon: "/icons/notebook.svg", href: "#estudios" },
   { text: "Contacto", icon: "/icons/address-book.svg", href: "#contacto" },
+];
+
+const navItems2 = [
+  { text: "", icon: "/icons/home.svg", href: "#inicio" },
+  { text: "", icon: "/icons/notebook.svg", href: "#estudios" },
+  { text: "", icon: "/icons/code.svg", href: "#proyectos" },
+  { text: "", icon: "/icons/address-book.svg", href: "#contacto" },
 ];
 
 const buttons1 = [
@@ -67,7 +74,7 @@ const cards = [
     id: 'card-1',
     images: ['/images/mario1.jpeg', '/images/mario2.jpg', '/images/mario3.jpg'],
     title: 'Super Memory Bros',
-    description: 'Este fue mi primer proyecto en programación: un juego de memoria sencillo hecho con HTML, CSS y JavaScript. Por mi poca experiencia y conociemiento esta diseñado  pensando unicamente en pantallas de PC, por lo que no es responsive. Fue una experiencia muy útil para empezar a entender cómo funcionan las tecnologías básicas del desarrollo web',
+    description: 'Este fue mi primer proyecto en programación: un juego de memoria sencillo hecho con HTML, CSS y JavaScript. Por mi poca experiencia y conocimiento esta diseñado  pensando unicamente en pantallas de PC, por lo que no es responsive. Fue una experiencia muy útil para empezar a entender cómo funcionan las tecnologías básicas del desarrollo web.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg'],
     buttons: buttons1
   },
@@ -93,7 +100,7 @@ const cards = [
     id: 'card-4',
     images: ['/images/insulink1.jpg', '/images/insulink1.jpg'],
     title: 'Portfolio Personal',
-    description: 'Mis primeros pasos con Astro y Tailwind para crear este pequeño portfolio personal. Está organizado por componentes y es fácil de usar como plantilla para quien lo necesite.',
+    description: 'Mis primeros pasos con Astro y Tailwind para crear este pequeño portfolio personal. Está organizado por componentes y es muy sencillo de reutilizar como plantilla.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg', '/icons/flowbite.svg'],
     buttons: buttons4
   }
@@ -125,4 +132,4 @@ const experience = [
   }
 ]
 
-export { cards, intro1, experience, navItems, contactInfo, footerInfo }
+export { cards, intro1, experience, navItems,navItems2, contactInfo, footerInfo }

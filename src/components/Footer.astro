@@ -1,19 +1,13 @@
 ---
-import { footerInfo } from "../data/dataInfo";
-import Contact from "./Contact.astro";
+import { footerInfo } from '../data/dataInfo'
+import Contact from './Contact.astro'
 ---
 
-<footer
-  id="contacto"
-  class="left-0 z-20 w-full p-4 bg-slate-950 border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
->
+<footer id="contacto" class=" left-0 z-20 w-full p-4 bg-slate-950 border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+    <Contact info={footerInfo} />
+  </ul>
+  <span class="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Eben Gonzalez de la Cruz ™</a>
 </footer>
-<ul
-  class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
->
-  <Contact info={footerInfo} />
-</ul>
-<span
-  class="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400"
-  >© 2025 Eben Gonzalez de la Cruz ™</span
->
+

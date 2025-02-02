@@ -12,18 +12,18 @@ const { info } = Astro.props;
 ---
 
 <div
-  class="flex justify-center flex-wrap items-center gap-4 p-4 text-white rounded-lg shadow-md mt-10"
+  class="flex justify-center flex-wrap items-center gap-4 p-4 text-white rounded-lg shadow-md "
 >
   {
     info.map((button) => (
       <a
         href={button.href}
         {...(button.download ? { download: "" } : {})}
-        class="flex items-center gap-2 px-4 py-2  hover:bg-white/30 rounded-md transition-colors"
+        class="flex items-center gap-2 px-4 py-2  hover:bg-white/20 rounded-md transition-colors"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={button.icon} alt={`${button.text} icon`} class="w-5 h-5" />
+        <img src={button.icon} alt={`${button.text} icon`} class="w-8 h-8" />
         <span class="text-sm font-medium">{button.text}</span>
       </a>
     ))
