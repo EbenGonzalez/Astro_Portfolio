@@ -1,11 +1,9 @@
 ---
-const imageSrc = '/images/eben.jpg';
-const altText = 'Foto de perfil portfolio';
+const imageSrc = "/images/eben.jpg";
+const altText = "Foto de perfil portfolio";
 ---
 
 <div class="circular-container flex justify-center items-center">
-
-  
   <div
     class="circular-image-wrapper relative group w-[150px] h-[150px] rounded-full flex justify-center items-center overflow-hidden bg-gradient-to-r from-gray-700 to-gray-800"
   >
@@ -16,8 +14,9 @@ const altText = 'Foto de perfil portfolio';
     />
 
     <div
-      class="absolute inset-0 rounded-full border-4 border-transparent border-t-blue-400 border-l-purple-500 border-b-pink-500 border-r-yellow-400 animate-spin-slow"
-    ></div>
+      class="absolute inset-0 rounded-full border-4 border-transparent border-t-purple-500 border-l-yellow-500 border-b-purple-500 border-r-yellow-500 animate-spin-slow"
+    >
+    </div>
   </div>
 </div>
 
@@ -31,10 +30,7 @@ const altText = 'Foto de perfil portfolio';
     }
   }
 
-    .animate-spin-slow {
-      animation: spin-slow 8s linear infinite;
-    }
-  
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
 </style>
-
-

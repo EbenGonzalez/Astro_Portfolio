@@ -1,88 +1,82 @@
-
 <div class="name-container pt-24">
-  <div class="name">
-    <div class="cosmic" style="--color: #23b1d8" data-text="E">
-      <span>E</span>
-    </div>
-    <div class="cosmic" style="--color: #dc5fe2" data-text="B">
-      <span>B</span>
-    </div>
-    <div class="cosmic" style="--color: #b733f9" data-text="E">
-      <span>E</span>
-    </div>
-    <div class="cosmic" style="--color: #a0de59" data-text="N">
-      <span>N</span>
-    </div>
-    <div class="cosmic" style="--color: #83d1ad" data-text=".">
-      <span>.</span>
-    </div>
-    <div class="cosmic" style="--color: #f7b500" data-text=".">
-      <span>.</span>
-    </div>
-  </div>
+	<div class="name">
+		<div class="cosmic" style="--color: #ffffff" data-text="E">
+			<span>E</span>
+		</div>
+		<div class="cosmic" style="--color: #dc5fe2" data-text="B">
+			<span>B</span>
+		</div>
+		<div class="cosmic" style="--color: #ffffff" data-text="E">
+			<span>E</span>
+		</div>
+		<div class="cosmic" style="--color: #ffff00" data-text="N">
+			<span>N</span>
+		</div>
+		<div class="cosmic" style="--color: #dc5fe2" data-text=".">
+			<span>.</span>
+		</div>
+	</div>
 </div>
 
 <style>
-
-:root {
-	--size: 120px;
-	--font-size: 8rem;
-}
-
-.name-container {
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: var(--background);
-}
-
-.name {
-	position: relative;
-	display: flex;
-}
-
-.name .cosmic {
-	position: relative;
-	cursor: pointer;
-	height: var(--size);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	span {
-		font-size: var(--font-size);
-		font-weight: 700;
-		-webkit-text-stroke: 0.5px var(--color);
-		color: transparent;
-		transition: 0.5s;
+	:root {
+		--size: 120px;
+		--font-size: 8rem;
 	}
 
-	&:hover span {
-		opacity: 0;
+	.name-container {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: var(--background);
 	}
-}
 
-.name .cosmic {
-	&::before {
-		content: attr(data-text);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		font-size: var(--font-size);
-		height: 0;
-		font-weight: 700;
-		overflow: hidden;
-		transition: 0.6s ease-in-out;
-		text-align: center;
-		line-height: var(--size);
-		color: var(--color);
+	.name {
+		position: relative;
+		display: flex;
 	}
-	&:hover::before {
-		height: 100%;
-		filter: drop-shadow(0 0 2rem var(--color));
-	}
-}
 
+	.name .cosmic {
+		position: relative;
+		cursor: pointer;
+		height: var(--size);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			font-size: var(--font-size);
+			font-weight: 700;
+			-webkit-text-stroke: 0.5px var(--color);
+			color: transparent;
+			transition: 0.5s;
+		}
+
+		&:hover span {
+			opacity: 0;
+		}
+	}
+
+	.name .cosmic {
+		&::before {
+			content: attr(data-text);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			font-size: var(--font-size);
+			height: 0;
+			font-weight: 700;
+			overflow: hidden;
+			transition: 0.6s ease-in-out;
+			text-align: center;
+			line-height: var(--size);
+			color: var(--color);
+		}
+		&:hover::before {
+			height: 100%;
+			filter: drop-shadow(0 0 2rem var(--color));
+		}
+	}
 </style>

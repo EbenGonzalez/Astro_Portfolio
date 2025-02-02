@@ -21,11 +21,10 @@ const { date, title, description, link, textButton } = Astro.props;
   {date}
 </time>
 
-<h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+<h3 class="text-lg font-semibold text-yellow-200 dark:text-white">
   {title}
 </h3>
 
-<!-- Descripción truncada que se expande al hacer clic -->
 <p
   class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 line-clamp-3 cursor-pointer overflow-hidden transition-all duration-300"
   onclick="this.classList.toggle('line-clamp-3'); this.classList.toggle('overflow-hidden')"
@@ -56,5 +55,3 @@ const { date, title, description, link, textButton } = Astro.props;
       d="M1 5h12m0 0L9 1m4 4L9 9"></path>
   </svg>
 </a>
-
-

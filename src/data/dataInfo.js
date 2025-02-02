@@ -99,8 +99,7 @@ const cards = [
   }
 ];
 
-const intro1 = "Hola!!!";
-const intro2 = "Soy Eben González de la Cruz, desarrollador web en formación. Vengo de otro sector, pero mi pasión por la tecnología me ha llevado a reinventarme en este campo. Busco una empresa donde realizar mis prácticas, aprender de profesionales y aportar con entusiasmo."
+const intro1 = "¡¡Hola!!";
 
 const experience = [
   {
@@ -126,4 +125,4 @@ const experience = [
   }
 ]
 
-export { cards, intro1, intro2, experience, navItems, contactInfo, footerInfo }
+export { cards, intro1, experience, navItems, contactInfo, footerInfo }

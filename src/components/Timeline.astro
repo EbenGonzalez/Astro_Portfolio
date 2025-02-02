@@ -1,16 +1,14 @@
 ---
-import Studies from "./Studies.astro"
-import { experience } from "../data/dataInfo"
-
+import Studies from "./Studies.astro";
+import { experience } from "../data/dataInfo";
 ---
-<ol id="estudios" class="relative border-s border-gray-200 dark:border-gray-700"> 
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
   {
-    experience.map(experience =>(
-    <li class="mb-10 ms-4">
-      <Studies {...experience}/>
+    experience.map((experience) => (
+      <li class="mb-10 ms-4">
+        <Studies {...experience} />
       </li>
     ))
-  }    
+  }
 </ol>
-  
-

@@ -1,15 +1,13 @@
 ---
-
-
-// Props del componente
-
 import { navItems } from "../data/dataInfo";
 ---
 
-<div class="fixed flex items-center z-20 gap-4 p-4  text-white rounded-md ">
-  <!-- Botón para abrir/cerrar el menú -->
+<div
+  class="fixed flex items-center justify-center z-20 gap-4 p-4 text-white rounded-md"
+>
+  <!-- Botón menú -->
   <button
-    class=" flex p-2 bg-gray-700 rounded-md hover:bg-gray-600 transition-colors"
+    class="flex p-2 bg-gray-700 rounded-md hover:bg-gray-600 transition-colors"
     onclick="document.getElementById('dropdown-menu').classList.toggle('hidden')"
   >
     Menu
@@ -18,17 +16,19 @@ import { navItems } from "../data/dataInfo";
   <!-- Menú desplegable -->
   <div
     id="dropdown-menu"
-    class="hidden flex flex-wrap items-center text-white rounded-md shadow-xs "
+    class="hidden flex flex-wrap items-center text-white rounded-md shadow-xs"
   >
-    <!-- Botones generados dinámicamente -->
-    {navItems.map((item) => (
-      <a
-        href={item.href}
-        class="flex border-white/10 items-center px-4 py-2 text-sm font-medium text-white bg-gray-700 border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 "
-      >
-        <img src={item.icon} alt={`${item.text} icon`} class="w-4 h-4 mr-2" />
-        {item.text}
-      </a>
-    ))}
+    <!-- Mapeo opciones -->
+    {
+      navItems.map((item) => (
+        <a
+          href={item.href}
+          class="flex border-white/10 items-center px-4 py-2 text-sm font-medium text-white bg-gray-700 border border-gray-200 hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 "
+        >
+          <img src={item.icon} alt={`${item.text} icon`} class="w-4 h-4 mr-2" />
+          {item.text}
+        </a>
+      ))
+    }
   </div>
 </div>

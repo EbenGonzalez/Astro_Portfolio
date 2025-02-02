@@ -6,15 +6,10 @@ import Card from "../components/Card.astro";
 import Timeline from "../components/Timeline.astro";
 import Contact from "../components/Contact.astro";
 import NiceLetters from "../components/NiceLetters.astro";
-import { cards, intro1, intro2,contactInfo} from "../data/dataInfo";
-
-
-
-
+import { cards, intro1, contactInfo } from "../data/dataInfo";
 ---
 
 <Layout
-
 	title="Eben Portfolio - Desarrollador y Programador web"
 	description="Contratame polfavol"
 >
@@ -22,18 +17,41 @@ import { cards, intro1, intro2,contactInfo} from "../data/dataInfo";
 
 	<main class="px-4">
 		<ProfilePic />
-		<section class="w-full mx-auto lg:w-[740px] py-20">
-			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
+		<section class="w-full mx-auto lg:w-[740px] py-20 pb-5">
+			<h1
+				class="flex items-center justify-center text-5xl font-bold flex flex-row gap-x-4 pb-4"
+			>
 				{intro1}
 				<div class="flex justify-center items-center">
 					<Badge>En Busca De Practicas</Badge>
 				</div>
 			</h1>
-			<h2 class="text-xl opacity-80">
-				{intro2}
+			<h2 class="text-xl opacity-80 text-pretty">
+				Soy Eben González de la Cruz, <span class="text-purple-400"
+					>desarrollador web en formación.</span
+				><span class="text-yellow-400">
+					Busco una empresa donde realizar mis prácticas</span
+				>, aprender de profesionales y aportar con entusiasmo.
 			</h2>
 			<Contact info={contactInfo} />
-			<ul id="proyectos" class="space-y-10">
+		</section>
+		<section
+			class="flex flex-col pt-10 gap-x-6 w-full mx-auto lg:w-[740px] py-10"
+		>
+			<span id="estudios" class="flex pt-10 gap-x-6">
+				<img class="w-12 h-12 p-1" src="/icons/vocabulary.svg" alt="" />
+				<h2 class="text-4xl font-semibold mb-4">Estudios</h2>
+			</span>
+			<Timeline />
+		</section>
+		<section
+			class="flex flex-col pt-10 gap-x-6 w-full mx-auto lg:w-[740px] py-44"
+		>
+			<span id="proyectos" class="flex pt-10 gap-x-6">
+				<img class="w-12 h-12 p-1" src="/icons/code.svg" alt="" />
+				<h2 class="text-4xl font-semibold mb-4">Proyectos</h2>
+			</span>
+			<ul class="space-y-10">
 				{
 					cards.map((card) => (
 						<li>
@@ -42,15 +60,6 @@ import { cards, intro1, intro2,contactInfo} from "../data/dataInfo";
 					))
 				}
 			</ul>
-		</section>
-		<section
-			class="flex flex-col pt-10 gap-x-6 w-full mx-auto lg:w-[740px] py-44"
-		>
-			<span class="flex pt-10 gap-x-6">
-				<img class="w-12 h-12 p-1" src="/icons/vocabulary.svg" alt="" />
-				<h2 class="text-4xl font-semibold mb-4">Estudios</h2>
-			</span>
-			<Timeline />
 		</section>
 	</main>
 </Layout>

@@ -1,5 +1,18 @@
-<span 
-  class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400"
-  >
-  <slot />
+<span
+  class="relative bg-blue-100 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400
+         border-[2px] border-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400
+         bg-[length:200%_200%] animate-[border-animation_2s_linear_infinite]"
+>
+  <span><slot /></span>
 </span>
+
+<style>
+  @keyframes border-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+</style>

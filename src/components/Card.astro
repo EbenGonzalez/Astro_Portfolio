@@ -16,7 +16,7 @@ const { id, images, title, description, icons, buttons } = Astro.props;
 ---
 
 <div
-  class="max-w bg-gray-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  class="max-w bg-gray-400 border border-gray-200 rounded-lg shadow-[0px_15px_30px_rgba(255,255,255,0.3)] dark:bg-gray-800 dark:border-gray-700"
 >
   <!-- Carrusel imagenes -->
   <Carousel id={id} images={images} />
@@ -30,13 +30,13 @@ const { id, images, title, description, icons, buttons } = Astro.props;
       </h5>
     </a>
     <p
-      class="line-clamp-3 mb-3 font-normal text-gray-700 dark:text-gray-400 cursor-pointer transition-all"
+      class="line-clamp-3 mb-3 font-normal text-gray-700 dark:text-gray-400"
       onclick="this.classList.toggle('line-clamp-none')"
     >
       {description}
     </p>
 
-    <!-- Badges de las tecnologias usadas -->
+    <!-- Badges de las tecnologias -->
     <div class="flex flex-wrap justify-center items-center space-x-2 mb-3">
       {icons.map((src) => <TecnoBadge src={src} />)}
     </div>
