@@ -1,7 +1,7 @@
 ---
-import Carousel from './Carousel.astro';
-import TecnoBadge from './TecnoBadge.astro';
-import LinkButton from './LinkButton.astro';
+import Carousel from "./Carousel.astro";
+import TecnoBadge from "./TecnoBadge.astro";
+import LinkButton from "./LinkButton.astro";
 
 export interface Props {
   id: string;
@@ -15,33 +15,41 @@ export interface Props {
 const { id, images, title, description, icons, buttons } = Astro.props;
 ---
 
-<div class="max-w bg-gray-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div
+  class="max-w bg-gray-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
   <!-- Carrusel imagenes -->
   <Carousel id={id} images={images} />
 
   <div class="p-5">
     <a href="#">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h5
+        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+      >
         {title}
       </h5>
     </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+    <p
+      class="line-clamp-3 mb-3 font-normal text-gray-700 dark:text-gray-400 cursor-pointer transition-all"
+      onclick="this.classList.toggle('line-clamp-none')"
+    >
+      {description}
+    </p>
 
     <!-- Badges de las tecnologias usadas -->
-    <div class="flex justify-center items-center space-x-2 mb-3">
-        {icons.map((src) => (
-          <TecnoBadge src={src} />
-        ))}
-      </div>
-      <div class="flex flex-wrap gap-3">
-        {buttons.map((button) => (
-          <LinkButton 
-            text={button.text} 
-            iconButton={button.iconButton} 
-            link={button.link} 
+    <div class="flex flex-wrap justify-center items-center space-x-2 mb-3">
+      {icons.map((src) => <TecnoBadge src={src} />)}
+    </div>
+    <div class="flex flex-wrap gap-3">
+      {
+        buttons.map((button) => (
+          <LinkButton
+            text={button.text}
+            iconButton={button.iconButton}
+            link={button.link}
           />
-        ))}
-      </div>
+        ))
+      }
+    </div>
   </div>
 </div>
-
