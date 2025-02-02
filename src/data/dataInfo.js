@@ -98,9 +98,9 @@ const cards = [
   },
   {
     id: 'card-4',
-    images: ['/images/insulink1.jpg', '/images/insulink1.jpg'],
+    images: ['/images/portfolio1.jpg', '/images/portfolio2.jpg', '/images/portfolio3.jpg'],
     title: 'Portfolio Personal',
-    description: 'Mis primeros pasos con Astro y Tailwind para crear este pequeño portfolio personal. Está organizado por componentes y es muy sencillo de reutilizar como plantilla.',
+    description: 'Mis primeros pasos añadiendo Astro y Tailwind para crear este pequeño portfolio personalizado. Está organizado por componentes y es muy sencillo de reutilizar como plantilla.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg', '/icons/flowbite.svg'],
     buttons: buttons4
   }
