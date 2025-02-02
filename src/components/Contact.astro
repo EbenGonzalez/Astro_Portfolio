@@ -1,13 +1,21 @@
 ---
+export interface Props {
+  info: {
+    text: string;
+    icon: string;
+    href: string;
+    download?: boolean;
+  }[];
+}
 
-import { contactInfo } from "../data/dataInfo";
+const { info } = Astro.props;
 ---
 
 <div
-  class="flex justify-center items-center gap-4 p-4  text-white rounded-lg shadow-md"
+  class="flex justify-center flex-wrap items-center gap-4 p-4  text-white rounded-lg shadow-md"
 >
   {
-    contactInfo.map((button) => (
+    info.map((button) => (
       <a
         href={button.href}
         {...(button.download ? { download: "" } : {})}

@@ -4,17 +4,19 @@ import Layout from "../layouts/Layout.astro";
 import ProfilePic from "../components/ProfilePic.astro";
 import Card from "../components/Card.astro";
 import Timeline from "../components/Timeline.astro";
-import { cards, intro1, intro2 } from "../data/dataInfo";
-
-import NiceLetters from "../components/NiceLetters.astro";
 import Contact from "../components/Contact.astro";
+import NiceLetters from "../components/NiceLetters.astro";
+import { cards, intro1, intro2,contactInfo} from "../data/dataInfo";
+
+
+
 
 ---
 
 <Layout
 
 	title="Eben Portfolio - Desarrollador y Programador web"
-	description="Contratane polfavol"
+	description="Contratame polfavol"
 >
 	<NiceLetters />
 
@@ -30,7 +32,7 @@ import Contact from "../components/Contact.astro";
 			<h2 class="text-xl opacity-80">
 				{intro2}
 			</h2>
-			<Contact />
+			<Contact info={contactInfo} />
 			<ul id="proyectos" class="space-y-10">
 				{
 					cards.map((card) => (

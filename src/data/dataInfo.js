@@ -5,6 +5,14 @@ const contactInfo = [
   { text: "Curriculum", icon: "/icons/file-download.svg", href: "/docs/eben_gonzalez.pdf", download: true },
 ];
 
+const footerInfo = [
+  { text: "Github", icon: "/icons/Github_dark.svg", href: "https://github.com", download: false },
+  { text: "Email", icon: "/icons/gmail.svg", href: "mailto:example@example.com", download: false },
+  { text: "LinkedIn", icon: "/icons/linkedin.svg", href: "https://linkedin.com", download: false },
+  { text: "Whatsapp", icon: "/icons/whatsapp.svg", href: "https://wa.me/662308309", download: false },
+  { text: "Telegram", icon: "/icons/telegram.svg", href: "https://t.me/Ebencitoo", download: false },
+];
+
 const navItems = [
   { text: "Inicio", icon: "/icons/home.svg", href: "#inicio" },
   { text: "Proyectos", icon: "/icons/code.svg", href: "#proyectos" },
@@ -83,18 +91,18 @@ const cards = [
   },
   {
     id: 'card-4',
-    images: ['/images/insulink1.jpg','/images/insulink1.jpg'],
+    images: ['/images/insulink1.jpg', '/images/insulink1.jpg'],
     title: 'Portfolio Personal',
     description: 'Mis primeros pasos con Astro y Tailwind para crear este pequeño portfolio personal. Está organizado por componentes y es fácil de usar como plantilla para quien lo necesite.',
-    icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg','/icons/flowbite.svg'],
+    icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg', '/icons/flowbite.svg'],
     buttons: buttons4
   }
 ];
 
-const intro1= "Hola!!!";
-const intro2="Soy Eben González de la Cruz, desarrollador web en formación. Vengo de otro sector, pero mi pasión por la tecnología me ha llevado a reinventarme en este campo. Busco una empresa donde realizar mis prácticas, aprender de profesionales y aportar con entusiasmo."
+const intro1 = "Hola!!!";
+const intro2 = "Soy Eben González de la Cruz, desarrollador web en formación. Vengo de otro sector, pero mi pasión por la tecnología me ha llevado a reinventarme en este campo. Busco una empresa donde realizar mis prácticas, aprender de profesionales y aportar con entusiasmo."
 
-const experience=[
+const experience = [
   {
     date: "2024/2025",
     title: "Ciclo Superior Desarrollo de Aplicaciones Web",
@@ -118,4 +126,4 @@ const experience=[
   }
 ]
 
-export { cards, intro1, intro2, experience, navItems, contactInfo }
+export { cards, intro1, intro2, experience, navItems, contactInfo, footerInfo }
