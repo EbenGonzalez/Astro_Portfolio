@@ -4,7 +4,7 @@
 
 ## 🌐 Demo en vivo
 
-👉 [Ver Portafolio en GitHub Pages](https://ebengonzalez.github.io/Astro_Portfolio/)
+👉 [Ver Portafolio Eben González de la Cruz](https://ebengonzalez.netlify.app/)
 
 ## 🛠️ Tecnologías utilizadas
 

@@ -69,6 +69,14 @@ const buttons4 = [
   }
 ];
 
+const buttons5 = [
+  {
+    text: 'Repositorio',
+    iconButton: '/icons/Github_light.svg',
+    link: 'https://github.com/EbenGonzalez/Carbulator_Preview',
+  }
+];
+
 const cards = [
   {
     id: 'card-1',
@@ -110,7 +118,7 @@ const cards = [
     title: 'Carbulator',
     description: 'Proyecto de fin de ciclo, desarrollo de una aplicación web para calcular hidratos de carbono en alimentos, orientada a personas con diabetes o sus cuidadores.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/mysql.svg', '/icons/git.svg', '/icons/sequelize.svg', '/icons/react.svg' ],
-    buttons: buttons4
+    buttons: buttons5
   }
 ];
 
