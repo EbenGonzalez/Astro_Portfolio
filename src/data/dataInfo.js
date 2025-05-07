@@ -103,6 +103,14 @@ const cards = [
     description: 'Mis primeros pasos añadiendo Astro y Tailwind para crear este pequeño portfolio personalizado. Está organizado por componentes y es muy sencillo de reutilizar como plantilla.',
     icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/Astro_light.svg', '/icons/flowbite.svg'],
     buttons: buttons4
+  },
+  {
+    id: 'card-5',
+    images: ['/images/carbulator1.jpg', '/images/carbulator2.jpg', '/images/carbulator3.jpg'],
+    title: 'Carbulator',
+    description: 'Proyecto de fin de ciclo, desarrollo de una aplicación web para calcular hidratos de carbono en alimentos, orientada a personas con diabetes o sus cuidadores.',
+    icons: ['/icons/html5.svg', '/icons/css_old.svg', '/icons/javascript.svg', '/icons/vscode.svg', '/icons/nodejs.svg', '/icons/tailwindcss.svg', '/icons/mysql.svg', '/icons/git.svg', '/icons/sequelize.svg', '/icons/react.svg' ],
+    buttons: buttons4
   }
 ];
 
