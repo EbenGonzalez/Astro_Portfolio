@@ -1,6 +1,6 @@
 # 🪐 Portfolio Personal
 
-**Astro Portfolio** es un sitio web personal responsive desarrollado con **Astro**, diseñado para presentar mis proyectos, estudios, habilidades y experiencia como desarrollador web. 
+**Astro Portfolio** es un sitio web personal responsive que he desarrollado principalmente con **Astro**, diseñado para presentar mis proyectos, estudios, habilidades y experiencia como desarrollador web. 
 
 ## 🌐 Demo en vivo
 
