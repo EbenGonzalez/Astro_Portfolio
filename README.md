@@ -1,48 +1,73 @@
-# Astro Starter Kit: Basics
+# 🪐 Portfolio Personal
 
-```sh
-npm create astro@latest -- --template basics
+**Astro Portfolio** es un sitio web personal responsive desarrollado con **Astro**, diseñado para presentar mis proyectos, estudios, habilidades y experiencia como desarrollador web. 
+
+## 🌐 Demo en vivo
+
+👉 [Ver Portafolio en GitHub Pages](https://ebengonzalez.github.io/Astro_Portfolio/)
+
+## 🛠️ Tecnologías utilizadas
+
+![Astro](https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+## 🚀 Instalación y uso
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/EbenGonzalez/Astro_Portfolio.git
+   ```
+2. **Instala las dependencias:**
+
+    ```bash
+    npm install
+    ```
+3. **Ejecuta el servidor:**
+
+    ```bash
+    npm run dev
+    ```
+4. **Accede al sitio en tu navegador:**
+
+      Abre http://localhost:4321 para ver el portafolio en acción.
+
+## ♻️ Reutilizable y fácil de personalizar
+El portafolio está construido utilizando una arquitectura basada en componentes reutilizables, lo que facilita la personalización del contenido sin necesidad de modificar toda la estructura del proyecto.
+
+Toda la información personal (como nombre, descripción, proyectos, redes sociales, etc.) está centralizada en un archivo de configuración:
+
+```bash
+src/data/dataInfo.js
 ```
+🔧 Solo tienes que modificar ese archivo para:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+- ✏ Cambiar tu nombre o foto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- ➕ Añadir o quitar proyectos
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+ - ℹ Actualizar información de contacto, curriculum etc
 
-## 🚀 Project Structure
+- 👨‍🎓 Editar tus estudios completados
 
-Inside of your Astro project, you'll see the following folders and files:
+- 👩‍💻 Añadir, editar o eliminar botones e iconos de tecnologias
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Esto permite que cualquier persona pueda adaptar el portafolio fácilmente a su perfil sin tocar apenas el código de los componentes.
 
-## 🧞 Commands
+## 👨‍💻 Autor
 
-All commands are run from the root of the project, from a terminal:
+**Ebén González de la Cruz**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+📧 ebencito88@gmail.com
 
-## 👀 Want to learn more?
+🌐 https://github.com/EbenGonzalez
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+💼 https://www.linkedin.com/in/ebendev/
+
+
+
+
